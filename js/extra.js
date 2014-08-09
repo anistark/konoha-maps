@@ -1,4 +1,4 @@
-var map = L.map('map').setView([51.505, -0.09], 13);
+var map = L.map('map').setView([22.56, 88.36], 14);
 
 L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
 	maxZoom: 18,
@@ -8,7 +8,7 @@ L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
 	id: 'examples.map-i86knfo3'
 }).addTo(map);
 
-
+/*
 L.marker([51.5, -0.09]).addTo(map)
 	.bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
 
@@ -26,7 +26,7 @@ L.polygon([
 
 
 var popup = L.popup();
-
+*/
 function onMapClick(e) {
 	popup
 		.setLatLng(e.latlng)
